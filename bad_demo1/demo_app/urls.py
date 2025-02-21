@@ -20,5 +20,5 @@ from . import views
 
 urlpatterns = [
     path('', views.Profile),
-    path('reg/', views.Reg),
+    path('reg/', views.Reg, name="reg"),
 ]
