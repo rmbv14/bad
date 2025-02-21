@@ -1,8 +1,7 @@
-from django.forms import ModelForm
-from .models import *
+from django.forms import ModelForm #imports ModelForm
+from .models import * #imports all our models
 
 class regform(ModelForm):
     class Meta:
-        model = Profile
-        fields = '__all__'
-        
+        model = Applicant_Information
+        fields = '__all__' #uses all fields under the Profile model 

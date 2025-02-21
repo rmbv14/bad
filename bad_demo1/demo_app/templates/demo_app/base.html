@@ -1,13 +1,16 @@
+<!-- base html file  -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HELLO</title>
+    <title>GK Connect</title>
 </head>
 <body>
-    {% include 'demo_app/navbar.html' %}
+    <h1>Welcome To GK College</h1>
+    {% include 'demo_app/navbar.html' %} <!--navbar goes here-->
     {% block content%}
     {% endblock %}
+    {% include 'demo_app/footer.html' %} <!--footer goes here-->
 </body>
 </html>

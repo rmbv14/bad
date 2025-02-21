@@ -16,9 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from . import views
+from . import views #imports our views
 
 urlpatterns = [
     path('', views.Profile),
-    path('reg/', views.Reg, name="reg"),
+    path('register/', views.Register, name="register"), #serves as the link/url path for registering
 ]
