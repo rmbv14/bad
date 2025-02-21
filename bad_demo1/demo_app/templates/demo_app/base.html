@@ -7,9 +7,12 @@
     <title>GK Connect</title>
 </head>
 <body>
-    <h1>Welcome To GK College</h1>
-    {% include 'demo_app/navbar.html' %} <!--navbar goes here-->
+    <h1>Welcome To GK College!</h1>
+    {% include 'demo_app/header.html' %} <!--navbar goes here-->
     {% block content%}
+    <a href="/register/">
+        <button>Register Now!</button>
+    </a>
     {% endblock %}
     {% include 'demo_app/footer.html' %} <!--footer goes here-->
 </body>
