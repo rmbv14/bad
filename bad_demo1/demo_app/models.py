@@ -8,4 +8,7 @@ class Applicant_Information(models.Model): #the main model for applicant info
     password = models.CharField(max_length=100)
     number = PhoneNumberField(region="PH")
     email = models.CharField(max_length=50)
+
+    def __str__(self):
+        return f"{self.first_name} {self.last_name}"
 # Create your models here.

@@ -8,13 +8,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GK Connect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>Welcome To GK College!</h1>
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen">
     {% include 'demo_app/header.html' %} <!--navbar goes here-->
     {% block content%}
     <a href="/register/">
-        <button>Register Now!</button>
+        <button class="w-full bg-black text-white px-5 py-3 mt-8 rounded-md hover:bg-gray-800">Register Now!</button>
     </a>
     {% endblock %}
     {% include 'demo_app/footer.html' %} <!--footer goes here-->

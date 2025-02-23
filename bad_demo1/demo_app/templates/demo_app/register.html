@@ -2,12 +2,18 @@
 
 {% block content%}
 
-<form action="{% url 'register' %}" method="POST">
-    {% csrf_token %}
-    {{form.as_p}}
-    <input type="submit" name="Submit">
-</form>
-<a href="http://127.0.0.1:8000/submit/">
-    <button>Cancel</button>
-</a>
+<div class="bg-white p-8 shadow-md rounded-lg w-full max-w-md mt-10">
+    <h2 class="text-3xl font-semibold text-center mb-6">Register</h2>
+    
+    <form action="" method="POST" class="space-y-4">
+        {% csrf_token %}
+        {{ form.as_p }}  <!-- Django will automatically render the form fields -->
+        
+        <!-- Submit Button -->
+        <button type="submit" class="w-full bg-black text-white py-3 rounded-md hover:bg-gray-800">
+            Submit
+        </button>
+    </form>
+</div>
+
 {% endblock %}
