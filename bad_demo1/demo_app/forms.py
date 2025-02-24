@@ -9,7 +9,7 @@ class regform(ModelForm):
     )
     class Meta:
         model = Applicant_Information
-        fields = '__all__' #uses all fields under the Profile model 
+        fields = ['first_name', 'last_name', 'password', 'number', 'email'] #uses all fields under the Profile model 
         widgets = {
             'first_name': forms.TextInput(attrs={'class': 'w-full p-3 border border-gray-300 rounded-md'}),
             'last_name': forms.TextInput(attrs={'class': 'w-full p-3 border border-gray-300 rounded-md'}),
