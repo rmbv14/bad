@@ -18,4 +18,7 @@ def Register(request):
 
 def Submit(request):
     return render(request, 'demo_app/submit.html') #renders base.html 
+
+def Login(request):
+    return render(request, 'demo_app/login.html')
 # Create your views here.

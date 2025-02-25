@@ -21,5 +21,6 @@ from . import views #imports our views
 urlpatterns = [
     path('', views.base, name="home"),
     path('register/', views.Register, name="register"), #serves as the link/url path for registering
-    path('submit/', views.Submit, name="Submit")
+    path('submit/', views.Submit, name="Submit"),
+    path('login/', views.Login, name="Login")
 ]

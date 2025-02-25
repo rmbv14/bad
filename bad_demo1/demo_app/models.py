@@ -8,7 +8,7 @@ class Applicant_Information(models.Model): #the main model for applicant info
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
     password = models.CharField(max_length=100)
-    number = PhoneNumberField(region="PH")
+    mobile_number = PhoneNumberField(region="PH")
     email = models.CharField(max_length=50)
     
     # def save(self, *args, **kwargs):
